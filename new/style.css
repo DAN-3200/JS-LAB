@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #28282b;
+}
+
+/* Card do time ------------------------------------------------------------------- */
+
+.box-time{
+    width: 350px;
+    min-height: 350px;
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    background-color: rgb(223, 236, 231);
+    border-radius: 7.5px;
+}
+
+/* -- tab */
+
+.time-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: rgb(231, 107, 107); */
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.button-tab{
+    width: 80px;
+    padding: 5px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 2.5px;
+    color: #28282b;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.button-tab:hover{
+    transition: 0.2s;
+    background-color:  rgb(205, 216, 212);
+    color: #303030;
+}
+
+/* -- view */
+
+.time-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: rgb(231, 107, 107); */
+
+}
+
+.time-view span{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #28282b;
+}
+
+.time-view span:hover{
+    animation: blink 0.75s reverse;
+    cursor: default;
+}
+
+/* -- tools */
+
+.time-tools{
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: white; */
+}
+
+.button-tools{
+    width: 80%;
+    padding: 5px 20px;
+
+    background-color: rgb(75, 153, 255);
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    transition: 0.1s;
+    color: white;
+}
+
+.button-tools:active{
+    background-color: rgb(107, 171, 255);
+    box-shadow: none;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+@keyframes blink{
+    from{
+
+    }to{
+        opacity: 60%;
+    }
+}
